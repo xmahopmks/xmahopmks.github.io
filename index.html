@@ -11,27 +11,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="header__top-menu">
+        <div class="header__top-menu__number">
+            8 800 775 76 74
+        </div>
+    </div>
+    <div class="header__main-menu">
+        <div class="header__main-menu__logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <input id="header__main-menu__menu-toggle" class="header__main-menu__checkbox" type="checkbox"  />
+        <label class="header__main-menu__button" for="header__main-menu__menu-toggle"><span></span></label>
+        <div id="main-menu" class="header__main-menu__menu">
+            <ul class="ul-reset">
+                <a href=""><li>Menu item</li></a>
+                <a href=""><li>Menu item</li></a>
+                <a href=""><li>Menu item</li></a>
+                <a href=""><li>Menu item</li></a>
+            </ul>
+        </div>
+    </div>
     <div class="header">
-        <div class="header__top-menu">
-            <div class="header__top-menu__number">
-                8 800 775 76 74
-            </div>
-        </div>
-        <div class="header__main-menu">
-            <div class="header__main-menu__logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <input id="header__main-menu__menu-toggle" class="header__main-menu__checkbox" type="checkbox"  />
-            <label class="header__main-menu__button" for="header__main-menu__menu-toggle"><span></span></label>
-            <div id="main-menu" class="header__main-menu__menu">
-                <ul class="ul-reset">
-                    <a href=""><li>Menu item</li></a>
-                    <a href=""><li>Menu item</li></a>
-                    <a href=""><li>Menu item</li></a>
-                    <a href=""><li>Menu item</li></a>
-                </ul>
-            </div>
-        </div>
         <div class="header__content">
             <div class="header__content__text">
                 <h1 class="animate__animated animate__fadeInLeft">Облачное видеонаблюдение</h1>
@@ -223,10 +223,12 @@
     window.addEventListener('scroll', function() {
         let scrollHeight = window.pageYOffset;
         if (scrollHeight > 30){
+        console.log(scrollHeight)
         mainMenu.classList.add('fixed')
         }
         else {
         mainMenu.classList.remove('fixed')
+        console.log('remove fixed')
         }
     }
     )
