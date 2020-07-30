@@ -390,3 +390,22 @@ h2 {
     }
   }
   
+  @media only screen and (max-width: 394px) {
+      .header {
+          &__content {
+              &__buttons {
+                  ul {
+                      margin-top: 10px;
+                      display: block;
+                  }
+                  a {
+                      width: 10px;
+                  }
+                  li {
+                      margin-top: 50px;
+                      max-width: 200px;
+                  }
+              }
+          }
+      }
+  }
