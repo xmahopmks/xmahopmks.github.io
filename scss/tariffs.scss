@@ -1,0 +1,18 @@
+.tarrifs {
+    height: 800px;
+    background: rgb(0,90,255);
+    background: linear-gradient(360deg, rgba(0,90,255,1) 0%, rgba(30,144,255,1) 100%);
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10% 90%;
+}
+
+
+.section-title-tarrifs {
+    font-size: 32px;
+    color: #fff;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding-left: 8px;
+    max-width: 350px;
+}

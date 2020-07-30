@@ -217,7 +217,7 @@ h2 {
     }
 
     .header {
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 1% 99%;
         height: 820px;
         &__top-menu{
             display: none;
@@ -339,6 +339,18 @@ h2 {
     }
   }
 
+  @media only screen and (max-width: 394px) {
+    .header__content__buttons {
+        & ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        & li {
+            display: inline-block !important;
+        }
+    }
+}
 
 #header__main-menu__menu-toggle:checked ~ .header__main-menu__button {
     & > span{
@@ -384,7 +396,7 @@ h2 {
       height: 0%;
     }
     100% {
-      height: 35%;
+      height: 50%;
     }
   }
   

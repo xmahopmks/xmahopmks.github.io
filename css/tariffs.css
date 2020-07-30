@@ -1,0 +1,17 @@
+.tarrifs {
+  height: 800px;
+  background: #005aff;
+  background: linear-gradient(360deg, #005aff 0%, dodgerblue 100%);
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 10% 90%; }
+
+.section-title-tarrifs {
+  font-size: 32px;
+  color: #fff;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding-left: 8px;
+  max-width: 350px; }
+
+/*# sourceMappingURL=tariffs.css.map */

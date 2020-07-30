@@ -166,7 +166,7 @@ h2 {
     font-size: 25px; }
 
   .header {
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 1% 99%;
     height: 820px; }
     .header__top-menu {
       display: none;
@@ -250,6 +250,12 @@ h2 {
       .header__content__buttons ul {
         margin: 0 auto;
         margin-top: 50px; } }
+@media only screen and (max-width: 394px) {
+  .header__content__buttons ul {
+    margin: 0;
+    padding: 0; }
+  .header__content__buttons li {
+    display: inline-block !important; } }
 #header__main-menu__menu-toggle:checked ~ .header__main-menu__button > span {
   transform: rotate(45deg); }
   #header__main-menu__menu-toggle:checked ~ .header__main-menu__button > span::before {
@@ -280,7 +286,7 @@ h2 {
   0% {
     height: 0%; }
   100% {
-    height: 35%; } }
+    height: 50%; } }
 @media only screen and (max-width: 394px) {
   .header__content__buttons ul {
     margin-top: 10px;

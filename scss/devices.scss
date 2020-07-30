@@ -147,6 +147,7 @@ $blue: #1e90ff;
                 &-right {
                     grid-row: 2/3;
                     grid-column: 1/2;
+                    margin-top: 100px;
                 }
             }
             &__buttons {
@@ -158,4 +159,21 @@ $blue: #1e90ff;
 
     }
 
+}
+
+@media only screen and (max-width: 394px) {
+    .devices__slider {
+        &__item-right {
+            margin-top: 20px;
+        }
+
+    .slider_button {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 10px;
+    }
+}
 }
