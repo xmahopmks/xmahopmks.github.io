@@ -404,12 +404,14 @@ h2 {
       .header {
           &__content {
               &__buttons {
+                  font-size: 12px;
                   ul {
                       margin-top: 10px;
                       display: block;
                   }
                   a {
                       width: 10px;
+                      text-decoration: none;
                   }
                   li {
                       margin-top: 50px;
