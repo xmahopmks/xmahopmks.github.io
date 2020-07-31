@@ -1,4 +1,4 @@
-.tarrifs {
+.tariffs {
     height: 800px;
     background: rgb(0,90,255);
     background: linear-gradient(360deg, rgba(0,90,255,1) 0%, rgba(30,144,255,1) 100%);
@@ -17,6 +17,10 @@
         margin-top: 250px;
         align-self: center;
         justify-self: center;
+
+        &__tariff {
+            background-color: red;
+        }
     }
 }
 

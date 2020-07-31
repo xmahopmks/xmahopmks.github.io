@@ -111,7 +111,7 @@
         margin: 28px; } }
 @media only screen and (max-width: 394px) {
   .devices__slider__item-right {
-    margin-top: 20px; }
+    margin-top: 35px; }
   .devices__slider .slider_button {
     padding: 0;
     padding-top: 20px;
@@ -119,5 +119,10 @@
     padding-left: 3px;
     padding-right: 3px;
     width: 10px; } }
+@media only screen and (max-width: 286px) {
+  .devices__slider__item-right {
+    margin-top: 20px; }
+  .devices__slider .slider_button {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=devices.css.map */

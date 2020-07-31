@@ -164,7 +164,7 @@ $blue: #1e90ff;
 @media only screen and (max-width: 394px) {
     .devices__slider {
         &__item-right {
-            margin-top: 20px;
+            margin-top: 35px;
         }
 
     .slider_button {
@@ -177,3 +177,18 @@ $blue: #1e90ff;
     }
 }
 }
+
+@media only screen and (max-width: 286px) {
+    .devices__slider {
+        &__item-right {
+            margin-top: 20px;
+        }
+
+    .slider_button {
+        font-size: 13px;
+    }
+}
+}
+
+
+
