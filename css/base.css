@@ -492,7 +492,8 @@ html {
     margin-top: 20px; }
 
   .tabs {
-    padding: 0; }
+    padding: 0;
+    margin-top: 30px; }
     .tabs ul li {
       text-align: center; }
     .tabs-title {
@@ -589,7 +590,7 @@ html {
   color: #1e90ff !important;
   border: 3px solid #1e90ff; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   .devices {
     min-height: 1500px;
     grid-template-columns: 5% 90% 5%; }
