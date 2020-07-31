@@ -1,5 +1,5 @@
 .tariffs {
-    height: 800px;
+    height: 900px;
     background: rgb(0,90,255);
     background: linear-gradient(360deg, rgba(0,90,255,1) 0%, rgba(30,144,255,1) 100%);
     display: grid;
@@ -14,9 +14,9 @@
     &__container {
         grid-row: 2/3;
         grid-column: 2/3;
-        margin-top: 250px;
-        align-self: center;
+        align-self: start;
         justify-self: center;
+        margin-top: 30px;
 
         &__tariff {
             background-color: red;
@@ -34,3 +34,130 @@
     max-width: 350px;
 }
 
+.tariff-block {
+    display: inline-block;
+    margin-top: 40px;
+    ul {
+        margin: 0;
+        padding: 0;
+        & li {
+            list-style: none;
+            border-bottom: 1px solid #e1f1ff;
+            padding: 25px;
+            &:first-child {
+                border-top: 1px solid #e1f1ff;
+            }
+
+        }
+    }
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &-header {
+        color: $blue;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    &-price {
+        color: $blue;
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 35px;
+    }
+    &-button {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        
+        a {
+            padding: 10px;
+            background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);            color: #fff;
+            font-size: 17px;
+            border: none;
+            border-radius: 15px;
+            margin-top: 40px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-size: 300% 100%;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-decoration: none;
+    
+            &:hover {
+                cursor: pointer;
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1280px){
+    .tariffs {
+        grid-template-columns   : 5% 90% 5%;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .tariffs {
+        
+    }
+    .tariff-block {
+        display: inline-block;
+        margin-top: 40px;
+        ul {
+            margin: 0;
+            padding: 0;
+            & li {
+                font-size: 10px;
+                list-style: none;
+                margin: 2px;
+                border-bottom: 1px solid #e1f1ff;
+                &:first-child {
+                    border-top: 1px solid #e1f1ff;
+                }
+    
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .tariffs {
+        height: 1800px;
+    }
+    .tariffs__container {
+        text-align: center;
+    }
+    .tariff-block {
+        display: inline-block;
+        margin-top: 40px;
+        ul {
+            margin: 0;
+            padding: 0;
+            & li {
+                font-size: 16px;
+                list-style: none;
+                margin: 2px;
+                padding: 35px;
+                border-bottom: 1px solid #e1f1ff;
+                &:first-child {
+                    border-top: 1px solid #e1f1ff;
+                }
+    
+            }
+        }
+    }
+}

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -34,27 +35,27 @@
     <div class="header">
         <div class="header__content">
             <div class="header__content__text">
-                <h1 class="animate__animated animate__fadeInLeft">Облачное видеонаблюдение</h1>
-                <h2 class="animate__animated animate__fadeInLeft animate__delay-1s">Увереность в завтрашнем дне</h2>
+                <h1 class="wow fadeInLeft">Облачное видеонаблюдение</h1>
+                <h2 class="wow fadeInLeft" data-wow-delay="1s">Увереность в завтрашнем дне</h2>
                 <div class="header__content__text__icons">
                     <ul class="ul-reset header__content__text__icons-ul">
-                        <li class="animate__animated animate__flipInY">
+                        <li class="wow flipInY">
                             <img src="https://x95sk1z0kq7410f121yjxo3e-wpengine.netdna-ssl.com/wp-content/uploads/revslider/cctv-home/slider1-icon3.png" alt="">
                             <p>Антивандальная защита</p>
                         </li>
-                        <li class="animate__animated animate__flipInY animate__delay-1s">
+                        <li class="wow flipInY" data-wow-delay="1s">
                             <img src="https://x95sk1z0kq7410f121yjxo3e-wpengine.netdna-ssl.com/wp-content/uploads/revslider/cctv-home/slider1-icon2.png"
                             alt="">
                             <p>Шифрование данных</p>
                         </li>
-                        <li class="animate__animated animate__flipInY animate__delay-2s">
+                        <li class="wow flipInY" data-wow-delay="2s">
                             <img src="https://x95sk1z0kq7410f121yjxo3e-wpengine.netdna-ssl.com/wp-content/uploads/revslider/cctv-home/slider1-icon1.png"
                             alt="">
                             <p>Запись архивов</p>
                         </li>
                     </ul>
                 </div>
-                <div class="header__content__buttons">
+                <div class="header__content__buttons wow fadeIn" data-wow-delay="3s">
                     <ul>
                         <li><a href="#">Оставить заявку</a></li>
                         <li><a href="#">Смотреть демо</a></li>
@@ -113,7 +114,7 @@
 
 <!-- START CALLBACK SECTION -->
 
-<div class="callback">
+<div class="callback wow flipInX">
     <div class="callback__title">
         <h3>Оставьте свой номер телефона и мы с вами свяжемся!</h1>
     </div>
@@ -209,8 +210,27 @@
 <div class="tariffs">
     <div class="tariffs__title"><h1 class="section-title-tarrifs">Тарифные <br>планы</h1><span class="tabs-title-line"></span></div>
     <div class="tariffs__container">
-        <div class="tariff-block tariffs__container__block">
-
+        <div class="tariff-block tariffs__container__block wow fadeInLeft">
+            <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="tariff-block-img">
+            <h2 class="tariff-block-header">Расширенный</h2>
+            <ul class="tariff-block-features">
+              <li class="tariff-block-features-item">Custom domains</li>
+              <li class="tariff-block-features-item">Sleeps after 30 mins of inactivity</li>
+              <li class="tariff-block-features-item">Sleeps after 30 mins of inactivity</li>
+            </ul>
+            <span class="tariff-block-price">100 р./камера</span>
+            <div class="tariff-block-button"><a class="" href="#">Подключить</a></div>
+        </div>
+        <div class="tariff-block tariffs__container__block wow fadeInRight">
+            <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="tariff-block-img">
+            <h2 class="tariff-block-header">Расширенный</h2>
+            <ul class="tariff-block-features">
+              <li class="tariff-block-features-item">Custom domains</li>
+              <li class="tariff-block-features-item">Sleeps after 30 mins of inactivity</li>
+              <li class="tariff-block-features-item">Sleeps after 30 mins of inactivity</li>
+            </ul>
+            <span class="tariff-block-price">100 р./камера</span>
+            <div class="tariff-block-button"><a class="" href="#">Подключить</a></div>
         </div>
     </div>
 </div>
@@ -223,12 +243,10 @@
     window.addEventListener('scroll', function() {
         let scrollHeight = window.pageYOffset;
         if (scrollHeight > 30){
-        console.log(scrollHeight)
         mainMenu.classList.add('fixed')
         }
         else {
         mainMenu.classList.remove('fixed')
-        console.log('remove fixed')
         }
     }
     )
