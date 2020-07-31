@@ -1,10 +1,12 @@
 .tariffs {
     height: 900px;
-    background: rgb(0,90,255);
-    background: linear-gradient(360deg, rgba(0,90,255,1) 0%, rgba(30,144,255,1) 100%);
+    // background: rgb(0,90,255);
+    // background: linear-gradient(360deg, rgba(0,90,255,1) 0%, rgba(30,144,255,1) 100%);
+    background-image: url(../img/tariff-bg.jpg);
     display: grid;
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 10% 90%;
+    background-size: cover;
     
     &__title {
         grid-row: 1/2;
@@ -136,7 +138,7 @@
 
 @media only screen and (max-width: 860px){
     .tariffs {
-        height: 1800px;
+        height: 1000px;
     }
     .tariffs__container {
         text-align: center;
@@ -144,6 +146,9 @@
     .tariff-block {
         display: inline-block;
         margin-top: 40px;
+        & img {
+            display: none;
+        }
         ul {
             margin: 0;
             padding: 0;
@@ -151,7 +156,7 @@
                 font-size: 16px;
                 list-style: none;
                 margin: 2px;
-                padding: 35px;
+                padding: 10px;
                 border-bottom: 1px solid #e1f1ff;
                 &:first-child {
                     border-top: 1px solid #e1f1ff;
