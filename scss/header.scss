@@ -194,6 +194,7 @@ h2 {
 
 @media only screen and (max-width: 1147px) and (min-width:601px) {
     .header {
+        height: 400px;
         &__content {
             &__image{
                 display: none;
@@ -202,7 +203,7 @@ h2 {
             &__text {
                 grid-column: 2/4;
                 align-self: center;
-                justify-self: center;
+                justify-content: center;
                 text-align: center;
                 &__icons {
                     text-align: center;
@@ -219,7 +220,7 @@ h2 {
 
     .header {
         grid-template-rows: 1% 99%;
-        height: 820px;
+        height: 520px;
         &__top-menu{
             display: none;
             height: 20px;
@@ -403,6 +404,7 @@ h2 {
   
   @media only screen and (max-width: 394px) {
       .header {
+          height: 700px;
           &__content {
               &__buttons {
                   font-size: 12px;
@@ -435,3 +437,4 @@ h2 {
           font-size: 20px;
       }
   }
+
