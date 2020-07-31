@@ -301,6 +301,16 @@ h2 {
     .header__content__buttons li {
       margin-top: 50px;
       max-width: 200px; } }
+@media only screen and (max-width: 300px) {
+  .section-title {
+    font-size: 24px;
+    border-left: 2px solid #428BFF;
+    border-bottom: 2px solid #428BFF;
+    padding-left: 8px;
+    max-width: 350px; }
+
+  .header__content__text h1, .header__content__text h2 {
+    font-size: 20px; } }
 /* colors */
 /* tab setting */
 /* breakpoints */
@@ -625,6 +635,12 @@ html {
     margin-top: 20px; }
   .devices__slider .slider_button {
     font-size: 13px; } }
+@media only screen and (max-width: 300px) {
+  .devices__slider__buttons {
+    margin-bottom: 0; }
+
+  .devices__slider__item-right svg {
+    display: none; } }
 .callback {
   display: grid;
   grid-template-columns: 15% 70% 15%;

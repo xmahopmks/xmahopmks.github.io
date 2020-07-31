@@ -193,3 +193,14 @@ $blue: #1e90ff;
 
 
 
+@media only screen and (max-width: 300px) {
+    .devices__slider__buttons {
+        margin-bottom: 0;
+    }
+
+    .devices__slider__item-right{
+        svg {
+            display: none;
+        }
+    }
+}

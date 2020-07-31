@@ -300,5 +300,15 @@ h2 {
     .header__content__buttons li {
       margin-top: 50px;
       max-width: 200px; } }
+@media only screen and (max-width: 300px) {
+  .section-title {
+    font-size: 24px;
+    border-left: 2px solid #428BFF;
+    border-bottom: 2px solid #428BFF;
+    padding-left: 8px;
+    max-width: 350px; }
+
+  .header__content__text h1, .header__content__text h2 {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=header.css.map */
