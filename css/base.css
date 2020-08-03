@@ -855,7 +855,8 @@ html {
           border-top: 1px solid #e1f1ff; } }
 @media only screen and (max-width: 860px) {
   .tariffs {
-    height: 1000px; }
+    height: 1000px;
+    margin-top: 83px; }
 
   .tariffs__container {
     text-align: center; }
@@ -996,7 +997,7 @@ html {
 @media only screen and (max-width: 600px) {
   .contacts {
     grid-template-columns: 5% 90% 5%;
-    height: 1100px; }
+    height: 1000px; }
 
   .contacts__container {
     margin-top: 10px; }
