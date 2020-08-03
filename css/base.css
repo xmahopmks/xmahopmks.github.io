@@ -610,7 +610,7 @@ html {
 
 @media only screen and (max-width: 670px) {
   .devices {
-    min-height: 1200px;
+    padding-bottom: 50px;
     justify-self: start;
     align-self: start;
     grid-template-columns: 5% 90% 5%; }
@@ -625,7 +625,8 @@ html {
       .devices__slider__item-right {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-top: 120px; }
+        margin-top: 100px;
+        margin-bottom: 100px; }
         .devices__slider__item-right svg {
           display: none; }
     .devices__slider__buttons li {
@@ -854,10 +855,6 @@ html {
         .tariff-block ul li:first-child {
           border-top: 1px solid #e1f1ff; } }
 @media only screen and (max-width: 860px) {
-  .tariffs {
-    height: 1000px;
-    margin-top: 83px; }
-
   .tariffs__container {
     text-align: center; }
 

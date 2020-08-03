@@ -132,7 +132,7 @@ $blue: #1e90ff;
         &__title {
             justify-self: center;
         }
-        min-height: 1200px;
+        padding-bottom: 50px;
         justify-self: start;
         align-self: start;
         grid-template-columns: 5% 90% 5%;
@@ -149,7 +149,8 @@ $blue: #1e90ff;
                 &-right {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    margin-top: 120px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
                 svg {
                     display: none;
                 }
