@@ -91,7 +91,7 @@
 
 @media only screen and (max-width: 670px) {
   .devices {
-    min-height: 1200px;
+    min-height: 1350px;
     grid-template-columns: 5% 90% 5%; }
     .devices__title {
       justify-self: center; }
