@@ -132,7 +132,7 @@ $blue: #1e90ff;
         &__title {
             justify-self: center;
         }
-        min-height: 1500px;
+        min-height: 1200px;
         grid-template-columns: 5% 90% 5%;
         &__slider {
             margin-top: -120px;
@@ -148,7 +148,7 @@ $blue: #1e90ff;
                 &-right {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    margin-top: 100px;
+                    margin-top: 120px;
                 }
             }
             &__buttons {

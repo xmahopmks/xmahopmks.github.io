@@ -314,5 +314,9 @@ h2 {
 
   .header__content__text h1, .header__content__text h2 {
     font-size: 20px; } }
+@media screen and (max-width: 800px) {
+  .wow {
+    animation-name: none !important;
+    visibility: visible !important; } }
 
 /*# sourceMappingURL=header.css.map */

@@ -8,7 +8,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://kit.fontawesome.com/44441c1b35.js" crossorigin="anonymous"></script>
     <script>
-    new WOW().init();
+    var wow = new WOW(
+        {
+            mobile: false, 
+        }
+    )
+    wow.init();
     </script>
     <title>Document</title>
 </head>
