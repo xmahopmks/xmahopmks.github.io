@@ -192,4 +192,15 @@
     }
 }
 
-    
+@media only screen and (max-width: 352px) {
+    .form-container {
+        height: 690px;
+    }
+    .form-container__form {
+        margin-top: -35px;
+
+        input, textarea, button {
+            width: 250px;
+        }
+    }
+}
