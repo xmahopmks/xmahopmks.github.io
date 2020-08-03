@@ -136,6 +136,7 @@ $blue: #1e90ff;
         justify-self: start;
         align-self: start;
         grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 50% 50%;
         &__slider {
             &__item {
                 display: none;
@@ -143,7 +144,8 @@ $blue: #1e90ff;
                 grid-template-columns: 100%;
 
                 &-left {
-                    grid-row: 1/2
+                    grid-row: 1/2;
+                    grid-column: 1/2;
                 }
 
                 &-right {
