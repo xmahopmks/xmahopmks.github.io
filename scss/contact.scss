@@ -1,7 +1,8 @@
 .contacts {
-    height: 1000px;
+    height: 800px;
+    background: url("../img/memphis-colorful.png") repeat;
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 15% 85%;
     grid-template-columns: 15% 70% 15%;
 
     &__title {
@@ -12,5 +13,117 @@
     &__container {
         grid-row: 2/3;
         grid-column: 2/3;
+        align-self: start;
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+        height: 500px;
+        margin-top: 80px;
     }
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 500px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+    &__info {
+        grid-column: 1/2;
+        background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/contacts-background.jpg);
+        background-size: cover;
+        
+        h3 {
+            font-size: 35px;
+            text-align: left;
+            color: #fff;
+            border-bottom: 5px solid $blue;
+            width: 400px;
+            margin-left: 10px;
+            margin-top: 100px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            float: left;
+            margin-left: 20px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        li {
+            list-style: none;
+            margin: 20px;
+        }
+    }
+
+    &__form {
+        grid-column: 2/3;
+        background-color: #fff;
+        display: flex; // FlexBox
+        align-items: center; // выравнивает по вертикали 
+        justify-content: center; //выравнивает по горизонтали
+
+        input, textarea {
+            width: 300px;
+            margin: 15px;
+            border: none;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 5px;
+            font-weight: 400;
+            font-family: HelveticaNeueCyr;
+            border: 1px solid rgba(30, 144, 255, 0.5);
+            &:focus {
+                outline: none;
+                border: 1.2px solid rgba(30, 144, 255, 1);
+                transition: ease .2s;
+            }
+        }
+        & button {
+            height: 50px;
+            width: 200px;
+            margin: 0 0;
+            background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+            color: #fff;
+            outline: none;
+            font-size: 17px;
+            border: none;
+            border-radius: 15px;
+            margin-top: 40px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-size: 300% 100%;
+            font-weight: 500;
+            letter-spacing: 1px;
+
+            &:hover {
+                cursor: pointer;
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+            }
+        }
+    }
+}
+
+#form-message {
+    height: 150px;
+}
+
+
+.fas, .far, .fab {
+    margin-right: 20px;
 }
