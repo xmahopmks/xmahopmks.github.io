@@ -1035,10 +1035,10 @@ html {
       width: 300px; } }
 @media only screen and (max-width: 352px) {
   .form-container {
-    height: 690px; }
+    height: 710px; }
 
   .form-container__form {
-    margin-top: -35px; }
+    margin-top: -15px; }
     .form-container__form input, .form-container__form textarea, .form-container__form button {
       width: 250px; } }
 
