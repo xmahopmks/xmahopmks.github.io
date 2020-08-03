@@ -149,8 +149,8 @@ $blue: #1e90ff;
                 &-right {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    margin-top: 100px;
-                    margin-bottom: 100px;
+                    background: none;
+                    padding: 0;
                 svg {
                     display: none;
                 }

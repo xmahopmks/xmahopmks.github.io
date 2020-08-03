@@ -106,8 +106,8 @@
       .devices__slider__item-right {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-top: 100px;
-        margin-bottom: 100px; }
+        background: none;
+        padding: 0; }
         .devices__slider__item-right svg {
           display: none; }
     .devices__slider__buttons li {
