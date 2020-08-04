@@ -151,12 +151,15 @@ $blue: #1e90ff;
                 &-left {
                     grid-column: 1/2;
                 }
-
+                &-left {
+                    text-align: center;
+                }
                 &-right {
                     grid-column: 1/2;
                     background: none;
                     padding: 0;
                     text-align: center;
+                    margin-top: 20px;
                 svg {
                     display: none;
                 }
@@ -222,4 +225,12 @@ $blue: #1e90ff;
     .devices__slider__item-right {
         height: 350px;
     }
+
+    .device-price {
+        margin-bottom: 55px;
+    }
+}
+
+.device-price {
+    margin-bottom: 35px;
 }

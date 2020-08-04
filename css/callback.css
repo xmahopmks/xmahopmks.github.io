@@ -1,98 +1,107 @@
-/*
-Error: Undefined variable: "$blue".
-        on line 36 of scss/callback.scss
+.callback {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 75%;
+  justify-items: center;
+  background: url(../img/callback-bg/1.png), url(../img/callback-bg/2.png), url(../img/callback-bg/3.png), url(../img/callback-bg/4.png), url(../img/callback-bg/5.png), url(../img/callback-bg/6.png), url(../img/callback-bg/7.png), url(../img/callback-bg/8.png), url(../img/callback-bg/10.png), url(../img/callback-bg/11.png), #f2f2f2;
+  background-position: bottom 10px left 80px, top 10px right 20px,top 10px left 20px, top 120px left 130px, top 200px right 100px, top 100px right 300px, top 20px left 240px, top -100px left 300px, top 180px right 250px, top 10px right 180px;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  padding: 20px; }
+  .callback__title {
+    grid-row: 1/2;
+    grid-column: 2/3; }
+    .callback__title h3 {
+      color: #2d2d2d;
+      font-size: 24px;
+      font-weight: 400; }
+  .callback__form {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 40px; }
+    .callback__form input[type=text] {
+      font-family: HelveticaNeueCyr;
+      border: none;
+      width: 200px;
+      text-align: center;
+      font-size: 16px;
+      border: 2px solid #1e90ff;
+      background-color: transparent;
+      color: #1e90ff;
+      font-weight: 600;
+      padding: 8px; }
+      .callback__form input[type=text]:focus {
+        outline: none; }
+      .callback__form input[type=text]::placeholder {
+        color: #1e90ff;
+        font-weight: 500;
+        font-size: 16px; }
+    .callback__form button {
+      height: 50px;
+      width: 200px;
+      margin: 0 0;
+      background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+      color: #fff;
+      outline: none;
+      font-size: 17px;
+      border: none;
+      border-radius: 15px;
+      margin-top: 40px;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background-size: 300% 100%;
+      font-weight: 500;
+      letter-spacing: 1px; }
+      .callback__form button:hover {
+        cursor: pointer;
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75); }
+    .callback__form li {
+      list-style: none;
+      display: inline-block; }
 
-31:             font-family: HelveticaNeueCyr;
-32:             border: none;
-33:             width: 200px;
-34:             text-align: center;
-35:             font-size: 16px;
-36:             border: 2px solid $blue;
-37:             background-color: transparent;
-38:             color: $blue;
-39:             font-weight: 600;
-40:             padding: 8px;
-41:             &:focus {
+@media only screen and (max-width: 600px) {
+  .ul-reset-callback {
+    text-align: center;
+    margin: 0;
+    padding: 0; }
 
-Backtrace:
-scss/callback.scss:36
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 36 of scss/callback.scss\A \A 31:             font-family: HelveticaNeueCyr;\A 32:             border: none;\A 33:             width: 200px;\A 34:             text-align: center;\A 35:             font-size: 16px;\A 36:             border: 2px solid $blue;\A 37:             background-color: transparent;\A 38:             color: $blue;\A 39:             font-weight: 600;\A 40:             padding: 8px;\A 41:             &:focus {"; }
+  .callback {
+    background: #f2f2f2;
+    background-repeat: no-repeat;
+    margin-top: 200px; }
+    .callback__title h3 {
+      text-align: center; }
+    .callback__form {
+      text-align: center;
+      margin-top: 60px; }
+      .callback__form li {
+        margin: 5px; } }
+@media only screen and (max-width: 932px) and (min-width: 600px) {
+  .callback {
+    background: url(../img/callback-bg/1.png), url(../img/callback-bg/2.png), url(../img/callback-bg/3.png), url(../img/callback-bg/5.png), #f2f2f2;
+    background-position: bottom 10px left 80px, top 10px right 20px,top 10px left 20px,  top 200px right 100px;
+    background-repeat: no-repeat; }
+    .callback__title {
+      text-align: center;
+      margin-bottom: 10px; }
+    .callback__form {
+      margin-top: 20px; }
+      .callback__form li {
+        display: block;
+        margin: 10px; } }
+@media only screen and (max-width: 600px) {
+  .callback {
+    margin-top: 300px; } }
+
+/*# sourceMappingURL=callback.css.map */

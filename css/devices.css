@@ -110,11 +110,14 @@
         height: 1000px; }
         .devices__slider__item-left {
           grid-column: 1/2; }
+        .devices__slider__item-left {
+          text-align: center; }
         .devices__slider__item-right {
           grid-column: 1/2;
           background: none;
           padding: 0;
-          text-align: center; }
+          text-align: center;
+          margin-top: 20px; }
           .devices__slider__item-right svg {
             display: none; }
       .devices__slider__buttons li {
@@ -142,6 +145,11 @@
     display: none; } }
 @media only screen and (max-width: 600px) {
   .devices__slider__item-right {
-    height: 350px; } }
+    height: 350px; }
+
+  .device-price {
+    margin-bottom: 55px; } }
+.device-price {
+  margin-bottom: 35px; }
 
 /*# sourceMappingURL=devices.css.map */

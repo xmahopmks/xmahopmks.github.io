@@ -197,5 +197,11 @@ html {
     .tabs-title {
       grid-column: 1/4;
       justify-self: center; } }
+@media only screen and (max-width: 756px) {
+  .tabs-wrapper {
+    margin-bottom: 150px; } }
+@media only screen and (max-width: 396px) {
+  .tabs-wrapper {
+    margin-bottom: 200px; } }
 
 /*# sourceMappingURL=tabs.css.map */

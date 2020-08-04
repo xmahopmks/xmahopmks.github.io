@@ -166,6 +166,11 @@ h2 {
       .header__content__text__icons {
         text-align: center; } }
 @media only screen and (max-width: 600px) {
+  .first-button-menu {
+    margin: 0;
+    padding: 15px 0 15px 15px !important;
+    margin-bottom: 20px; }
+
   h1, h2 {
     font-size: 25px; }
 
@@ -319,6 +324,33 @@ h2 {
   .wow {
     animation-name: none !important;
     visibility: visible !important; } }
+.submit-application {
+  background-image: linear-gradient(to right, #f5d020, #ef8513, #ef9413, #f5d020);
+  color: #000;
+  outline: none;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 40px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 300% 100%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-decoration: none; }
+  .submit-application:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #f5d020, #ef8513, #ef9413, #f5d020);
+    color: #000; }
+
 /* colors */
 /* tab setting */
 /* breakpoints */
@@ -517,6 +549,12 @@ html {
     .tabs-title {
       grid-column: 1/4;
       justify-self: center; } }
+@media only screen and (max-width: 756px) {
+  .tabs-wrapper {
+    margin-bottom: 150px; } }
+@media only screen and (max-width: 396px) {
+  .tabs-wrapper {
+    margin-bottom: 200px; } }
 .devices {
   background: url("../img/playstation-pattern.png") repeat;
   display: grid;
@@ -629,11 +667,14 @@ html {
         height: 1000px; }
         .devices__slider__item-left {
           grid-column: 1/2; }
+        .devices__slider__item-left {
+          text-align: center; }
         .devices__slider__item-right {
           grid-column: 1/2;
           background: none;
           padding: 0;
-          text-align: center; }
+          text-align: center;
+          margin-top: 20px; }
           .devices__slider__item-right svg {
             display: none; }
       .devices__slider__buttons li {
@@ -661,7 +702,13 @@ html {
     display: none; } }
 @media only screen and (max-width: 600px) {
   .devices__slider__item-right {
-    height: 350px; } }
+    height: 350px; }
+
+  .device-price {
+    margin-bottom: 55px; } }
+.device-price {
+  margin-bottom: 35px; }
+
 .callback {
   display: grid;
   grid-template-columns: 15% 70% 15%;
@@ -742,7 +789,8 @@ html {
 
   .callback {
     background: #f2f2f2;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-top: 200px; }
     .callback__title h3 {
       text-align: center; }
     .callback__form {
@@ -763,6 +811,9 @@ html {
       .callback__form li {
         display: block;
         margin: 10px; } }
+@media only screen and (max-width: 600px) {
+  .callback {
+    margin-top: 300px; } }
 .tariffs {
   height: 900px;
   background-image: url(../img/tariff-bg.jpg);
