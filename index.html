@@ -31,11 +31,11 @@
         <label class="header__main-menu__button" for="header__main-menu__menu-toggle"><span></span></label>
         <div id="main-menu" class="header__main-menu__menu">
             <ul class="ul-reset">
-                <li class="first-button-menu"><a href="#" class="submit-application">Оставить заявку</a></li>
-                <a href=""><li>Menu item</li></a>
-                <a href=""><li>Menu item</li></a>
-                <a href=""><li>Menu item</li></a>
-                <a href=""><li>Menu item</li></a>
+                <li class="first-button-menu"><a href="#contacts" class="submit-application">Оставить заявку</a></li>
+                <a href="#tabs"><li>Где использовать</li></a>
+                <a href="#devices"><li>Оборудование</li></a>
+                <a href="#tariffs"><li>Тарифы</li></a>
+                <a href="#contacts"><li>Обратная связь</li></a>
             </ul>
         </div>
     </div>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="header__content__buttons wow fadeIn" data-wow-delay="3s">
                     <ul>
-                        <li><a href="#">Оставить заявку</a></li>
+                        <li><a href="#contacts">Оставить заявку</a></li>
                         <li><a href="#">Смотреть демо</a></li>
                     </ul>
                 </div>
@@ -76,7 +76,7 @@
     </div>
 
     <!-- TABS SECTION -->
-<div class="tabs-wrapper">
+<div id="tabs" class="tabs-wrapper">
     <div class="tabs-title"><h1 class="section-title">Где<br>использовать?</h1><span class="tabs-title-line"></span></div>
     <div class="tabs">
 
@@ -143,7 +143,7 @@
 <!-- END CALLBACK SECTION -->
 
 <!-- DEVICES SECTION -->
-<div class="devices">
+<div id="devices" class="devices">
     <div class="devices__title"><h1 class="section-title">Оборудование</h1></div>
     <div class="devices__slider">
         <div class="devices__slider__buttons">
@@ -161,7 +161,7 @@
                 <div class="text">
                     <span class="title-price">Стоимость монтажа</span><br><span class="device-price">1500 Р</span></br>
                 </div>
-                <a class="device-app" href="#">Оставить заявку</a>
+                <a class="device-app" href="#contacts">Оставить заявку</a>
             </div>
             <div class="devices__slider__item-right">
                 <h2>Камера наружного наблюдения</h2>
@@ -214,7 +214,7 @@
                 <div class="text">
                     <span class="title-price">Стоимость монтажа</span><br><span class="device-price">1000 Р</span></br>
                 </div>
-                <a class="device-app" href="#">Оставить заявку</a>
+                <a class="device-app" href="#contacts">Оставить заявку</a>
             </div>
             <div class="devices__slider__item-right">
                 <h2>Камера внутреннего наблюдения</h2>
@@ -262,7 +262,7 @@
 </div>
 
 <!-- TARRIFS BLOCK -->
-<div class="tariffs">
+<div id="tariffs" class="tariffs">
     <div class="tariffs__title"><h1 class="section-title-tarrifs">Тарифные <br>планы</h1><span class="tabs-title-line"></span></div>
     <div class="tariffs__container">
         <div class="tariff-block tariffs__container__block wow fadeInLeft">
@@ -273,7 +273,7 @@
                 <li class="tariff-block-features-item">Зашифрованный канал</li>
                 <li class="tariff-block-features-item">Доступ с любого устройства <br>через интернет</li>
             </ul>
-            <div class="tariff-block-button"><a class="" href="#">Подключить</a></div>
+            <div class="tariff-block-button"><a class="" href="#contacts">Подключить</a></div>
         </div>
         <div class="tariff-block tariffs__container__block wow fadeInRight">
             <img src="img/14days.png" alt="" class="tariff-block-img">
@@ -283,13 +283,13 @@
               <li class="tariff-block-features-item">Зашифрованный канал</li>
               <li class="tariff-block-features-item">Доступ с любого устройства<br>через интернет</li>
             </ul>
-            <div class="tariff-block-button"><a class="" href="#">Подключить</a></div>
+            <div class="tariff-block-button"><a class="" href="#contacts">Подключить</a></div>
         </div>
     </div>
 </div>
 <!-- END TARRIFS BLOCK -->
 
-<div class="contacts">
+<div id="contacts" class="contacts">
     <div class="contacts__title">
         <h1 class="section-title">Напишите<br>нам!</h1>
     </div>
@@ -368,5 +368,31 @@ function showSlide(n){
     // buttons[n].style.backgroundColor = "#fff"
     // buttons[n].style.color = "#1e90ff"
     // buttons[n].style.border = "3px solid #1e90ff"
+}
+</script>
+
+<script>
+var linkNav = document.querySelectorAll('[href^="#"]'), 
+    V = 0.4;  
+for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function(e) { 
+        e.preventDefault(); 
+        var w = window.pageYOffset,  
+            hash = this.href.replace(/[^#]*(.*)/, '$1');  
+        t = document.querySelector(hash).getBoundingClientRect().top,  
+            start = null;
+        requestAnimationFrame(step);  
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {
+                requestAnimationFrame(step)
+            } else {
+                location.hash = hash 
+            }
+        }
+    }, false);
 }
 </script>
