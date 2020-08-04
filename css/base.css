@@ -1082,7 +1082,7 @@ html {
     align-self: start;
     height: 300px; }
     .form-container__info h3 {
-      margin-top: 0;
+      margin-top: 15px;
       width: 90%; }
 
   .form-container__form {
