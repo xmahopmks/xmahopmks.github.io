@@ -212,7 +212,7 @@ h2 {
         }
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1180px) {
 
     .first-button-menu {
         margin: 0;
@@ -248,10 +248,10 @@ h2 {
                 visibility: hidden;
                 left: -999;
                 text-align: center;
-                top: 63px;
+                top: 55px;
                 position: fixed;
                 background-color: #fff;
-                height: 35%;
+                height: 75% !important;
                 width: 100%;
                 justify-self: center;
                 align-self: center;
