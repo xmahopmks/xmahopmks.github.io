@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 670px) {
   .devices {
-    height: 1200px;
+    height: 1400px;
     padding-bottom: 50px;
     justify-self: start;
     align-self: start;
@@ -150,5 +150,14 @@
     margin-bottom: 55px; } }
 .device-price {
   margin-bottom: 35px; }
+
+.text {
+  margin-bottom: 25px; }
+  .text > .title-price {
+    font-size: 20px; }
+  .text > .device-price {
+    font-size: 28px;
+    color: #1e90ff;
+    font-weight: 600; }
 
 /*# sourceMappingURL=devices.css.map */

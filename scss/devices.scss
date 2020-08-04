@@ -131,7 +131,7 @@ $blue: #1e90ff;
         &__title {
             justify-self: center;
         }
-        height: 1200px;
+        height: 1400px;
         padding-bottom: 50px;
         justify-self: start;
         align-self: start;
@@ -232,4 +232,16 @@ $blue: #1e90ff;
 
 .device-price {
     margin-bottom: 35px;
+}
+
+.text {
+    margin-bottom: 25px;
+    & > .title-price {
+        font-size: 20px;
+    }
+    & > .device-price {
+        font-size: 28px;
+        color: $blue;
+        font-weight: 600;
+    }
 }
