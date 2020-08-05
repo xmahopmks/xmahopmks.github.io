@@ -2,11 +2,10 @@
     height: 900px;
     // background: rgb(0,90,255);
     // background: linear-gradient(360deg, rgba(0,90,255,1) 0%, rgba(30,144,255,1) 100%);
-    background-image: url(../img/tariff-bg.jpg);
+    background-image: url(https://lh3.googleusercontent.com/proxy/BH_mFYif68VcdtCpXanTIB0hZhgmuQTeyN2ZawdCAhJA2rm-GDENtbyituE2BQITxQJlBpHOE7G7FLlAkvWaSbRrU_eDRAlqYY4j4dsKKlKxUJLZS65f237E8sO_W0h9IqtUzBQYDv7Rav-ImIW7XQs1RASckNkoxuiT0Mj91uPMQWQRPbXT);
     display: grid;
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 10% 90%;
-    background-size: cover;
     
     &__title {
         grid-row: 1/2;
