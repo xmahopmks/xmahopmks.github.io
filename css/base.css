@@ -1097,6 +1097,7 @@ h2 {
     .form-container__form input, .form-container__form textarea, .form-container__form button {
       width: 250px; } }
 .footer {
+  padding-top: 20px;
   background-color: #252d34;
   display: grid;
   grid-template-rows: 1fr 0.1fr;

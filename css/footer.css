@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blue".
-        on line 77 of scss/footer.scss
+        on line 78 of scss/footer.scss
 
-72:     &__contacts{
-73:         grid-column: 3/4;
-74:         grid-row: 1/2;
-75: 
-76:         a:hover {
-77:             color: $blue;
-78:         }
-79:     }
-80:     &__links{
-81:         grid-column: 4/5;
-82:         grid-row: 1/2;
+73:     &__contacts{
+74:         grid-column: 3/4;
+75:         grid-row: 1/2;
+76: 
+77:         a:hover {
+78:             color: $blue;
+79:         }
+80:     }
+81:     &__links{
+82:         grid-column: 4/5;
+83:         grid-row: 1/2;
 
 Backtrace:
-scss/footer.scss:77
+scss/footer.scss:78
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 77 of scss/footer.scss\A \A 72:     &__contacts{\A 73:         grid-column: 3/4;\A 74:         grid-row: 1/2;\A 75: \A 76:         a:hover {\A 77:             color: $blue;\A 78:         }\A 79:     }\A 80:     &__links{\A 81:         grid-column: 4/5;\A 82:         grid-row: 1/2;"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 78 of scss/footer.scss\A \A 73:     &__contacts{\A 74:         grid-column: 3/4;\A 75:         grid-row: 1/2;\A 76: \A 77:         a:hover {\A 78:             color: $blue;\A 79:         }\A 80:     }\A 81:     &__links{\A 82:         grid-column: 4/5;\A 83:         grid-row: 1/2;"; }
